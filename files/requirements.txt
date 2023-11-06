@@ -1,4 +1,0 @@
-Flask==3.0.0
-Flask-HTTPAuth==4.8.0
-python-ldap==3.4.3
-pyopenssl==23.2.0
