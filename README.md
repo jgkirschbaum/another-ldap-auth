@@ -7,7 +7,7 @@ Use it like any other Helm Chart.
 Once Helm is locally installed, add the repo as follows:
 
 ```bash
-helm repo add another-ldap-auth https://jgkirschbaum.github.io/another-ldap-auth
+helm repo add nginx-ldap-auth https://jgkirschbaum.github.io/another-ldap-auth
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
@@ -19,7 +19,7 @@ to see the charts.
 To install the `another-ldap-auth` chart:
 
 ```bash
-helm upgrade --install -n mynamespace my-another-ldap-auth jgkirschbaum/another-ldap-auth
+helm upgrade --install -n mynamespace my-another-ldap-auth nginx-ldap-auth/another-ldap-auth
 ```
 
 ## App uninstallation
