@@ -31,7 +31,7 @@ jobs:
       # Check-out the repository
       # https://github.com/actions/checkout
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
