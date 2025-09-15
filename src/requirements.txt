@@ -1,6 +1,6 @@
 Flask==3.1.2
 Flask-HTTPAuth==4.8.0
 python-ldap==3.4.4
-pyopenssl==25.1.0
+pyopenssl==25.2.0
 gunicorn==23.0.0
 argon2-cffi==25.1.0
