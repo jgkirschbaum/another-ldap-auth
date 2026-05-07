@@ -1,4 +1,5 @@
-FROM python:3.14.3-alpine3.23
+# https://hub.docker.com/_/python
+FROM python:3.14.4-alpine3.23
 
 ENV PYTHONUNBUFFERED=1
 
