@@ -112,6 +112,10 @@ service:
 # -- Resource requests and limits
 resources: {}
 
+# -- Wether to set a priorityClassName or not,
+# see [Kubernetes documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority) for more details.
+priorityClassName: ""
+
 # -- Definitions for the [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/), usually not needed.
 # First try setting `numberOfWorkers`
 # @default -- *See values defined below*

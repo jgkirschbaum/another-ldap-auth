@@ -1,6 +1,6 @@
 # another-ldap-auth
 
-![Version: 1.3.18](https://img.shields.io/badge/Version-1.3.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.7.6](https://img.shields.io/badge/AppVersion-3.7.6-informational?style=flat-square)
+![Version: 1.4.0](https://img.shields.io/badge/Version-1.4.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.7.7](https://img.shields.io/badge/AppVersion-3.7.7-informational?style=flat-square)
 
 Helm chart using docker.io/jgkirschbaum/another-ldap-auth to enable AD or LDAP based basic-authentication for ingress resources
 
@@ -41,6 +41,7 @@ Helm chart using docker.io/jgkirschbaum/another-ldap-auth to enable AD or LDAP b
 | podAnnotations | object | `{}` | Special annotations for the pod |
 | podLabels | object | `{}` | Special labels for the pod |
 | podSecurityContext | object | `{}` | Special security context for the pod |
+| priorityClassName | string | `""` | Wether to set a priorityClassName or not, see [Kubernetes documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority) for more details. |
 | replicaCount | int | `1` | should not be changed, due to caching is done on a per pod basis. Only use it in very heavy loaded environments |
 | resources | object | `{}` | Resource requests and limits |
 | securityContext | object | `{}` | Special security context for the container |
