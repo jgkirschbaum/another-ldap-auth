@@ -2,6 +2,30 @@ apiVersion: v1
 entries:
   another-ldap-auth:
   - apiVersion: v2
+    appVersion: 3.7.9
+    created: "2026-06-16T05:18:41.132003326Z"
+    description: Helm chart using docker.io/jgkirschbaum/another-ldap-auth to enable
+      AD or LDAP based basic-authentication for ingress resources
+    digest: 54e6dc3462e9b5ecf41ac9497c0e13ed7f9c13f1ffcd3ac4276575b5e7cc367f
+    home: https://github.com/jgkirschbaum/another-ldap-auth
+    icon: https://img.shields.io/badge/Chart-another--ldap--auth-informational?style=flat-square
+    keywords:
+    - activedirectory
+    - another-ldap-auth
+    - authentication
+    - basic-auth
+    - http-auth-request
+    - ingress
+    - ldap
+    - nginx
+    name: another-ldap-auth
+    sources:
+    - https://github.com/jgkirschbaum/another-ldap-auth
+    type: application
+    urls:
+    - https://github.com/jgkirschbaum/another-ldap-auth/releases/download/another-ldap-auth-1.4.2/another-ldap-auth-1.4.2.tgz
+    version: 1.4.2
+  - apiVersion: v2
     appVersion: 3.7.8
     created: "2026-05-26T13:27:20.532317134Z"
     description: Helm chart using docker.io/jgkirschbaum/another-ldap-auth to enable
@@ -747,4 +771,4 @@ entries:
     urls:
     - https://github.com/jgkirschbaum/another-ldap-auth/releases/download/another-ldap-auth-0.9.1/another-ldap-auth-0.9.1.tgz
     version: 0.9.1
-generated: "2026-05-26T13:27:20.532512953Z"
+generated: "2026-06-16T05:18:41.132166431Z"
