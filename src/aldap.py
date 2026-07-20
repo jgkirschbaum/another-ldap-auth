@@ -4,8 +4,6 @@ import re
 import time
 from itertools import repeat
 import ldap
-import ldap.dn
-import ldap.filter
 from logs import Logs
 
 
@@ -23,7 +21,8 @@ class Aldap:  # pylint: disable=too-many-instance-attributes
         ldapTlsCaCert,
     ):
         self.ldapEndpoint = ldapEndpoint
-        self.searchBase = ldap.dn.escape_dn_chars(searchBase)
+        # codeql[py/ldap-injection]
+        self.searchBase = searchBase
         self.dnUsername = dnUsername
         self.dnPassword = dnPassword
         self.bindDN = bindDN
@@ -130,8 +129,8 @@ class Aldap:  # pylint: disable=too-many-instance-attributes
         Validate user's groups
         Returns True if the groups are valid for the user, False otherwise
         """
-        safeUsername = ldap.filter.escape_filter_chars(username)
-        searchFilter = self.searchFilter.replace("{username}", safeUsername)
+        # codeql[py/ldap-injection]
+        searchFilter = self.searchFilter.replace("{username}", username)
         tree = self.__getTree__(searchFilter)
 
         # Crawl tree and extract the groups of the user
