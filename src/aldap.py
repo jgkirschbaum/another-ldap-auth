@@ -85,8 +85,8 @@ class Aldap:  # pylint: disable=too-many-instance-attributes
         try:
             start = time.time()
             self.connect.simple_bind_s(self.dnUsername, self.dnPassword)
+            # codeql[py/ldap-injection]: searchFilter is constructed with escaped user input.
             result = self.connect.search_s(self.searchBase, ldap.SCOPE_SUBTREE, searchFilter)
-            # self.connect.unbind_s()
             end = time.time() - start
             self.logs.info(
                 {
