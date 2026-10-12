@@ -1,7 +1,7 @@
 # hadolint global ignore=DL3013,DL3018,DL3066
 
 # https://hub.docker.com/_/python
-FROM python:3.14.7-alpine3.24
+FROM python:3.14.8-alpine3.24
 
 ENV PYTHONUNBUFFERED=1
 
