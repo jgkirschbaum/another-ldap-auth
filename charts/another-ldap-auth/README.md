@@ -1,6 +1,6 @@
 # another-ldap-auth
 
-![Version: 1.4.11](https://img.shields.io/badge/Version-1.4.11-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.9.5](https://img.shields.io/badge/AppVersion-3.9.5-informational?style=flat-square)
+![Version: 1.4.12](https://img.shields.io/badge/Version-1.4.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.9.6](https://img.shields.io/badge/AppVersion-3.9.6-informational?style=flat-square)
 
 Helm chart using docker.io/jgkirschbaum/another-ldap-auth to enable AD or LDAP based basic-authentication for ingress resources
 
